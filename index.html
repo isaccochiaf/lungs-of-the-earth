@@ -83,6 +83,15 @@
                 });
         });
 
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+
     </script>
 </head>
 
@@ -116,10 +125,15 @@
 
                     <ul>
 
-                        <li>1.<a href="#fuoco"> Sulla linea del fuoco</a></li>
+                        <!-- <li>1.<a href="#fuoco"> Sulla linea del fuoco</a></li>
                         <li>2.<a href="#droni"> Droni per la conservazione</a></li>
                         <li>3.<a href="#orsi"> Gli orsi dimenticati</a></li>
-                        <li>4.<a href="#connection"> Guardiani della foresta</a></li>
+                        <li>4.<a href="#connection"> Guardiani della foresta</a></li>-->
+                        <li>1.<a class="scroll" href="#fires"> Sulla linea del fuoco</a></li>
+                        <li>2.<a class="scroll" href="#drones"> Droni per la conservazione</a></li>
+                        <li>3.<a class="scroll" href="#bears"> Gli orsi dimenticati</a></li>
+                        <li>4.<a class="scroll" href="#connection"> Guardiani della foresta</a></li>
+
                     </ul>
 
                 </div>
@@ -235,7 +249,7 @@
         <br>
         <br>
 
-        <div class="flex-video widescreen vimeo" id="fuoco">
+        <div class="flex-video widescreen vimeo" id="fires">
             <iframe src="https://player.vimeo.com/video/181832813" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
 
@@ -318,7 +332,7 @@
         <br>
         <br>
 
-        <div class="flex-video widescreen vimeo" id="droni">
+        <div class="flex-video widescreen vimeo" id="drones">
             <iframe src="https://player.vimeo.com/video/181818613" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
 
@@ -419,7 +433,7 @@
         <br>
         <br>
 
-        <div class="flex-video widescreen vimeo" id="orsi">
+        <div class="flex-video widescreen vimeo" id="bears">
             <iframe src="https://player.vimeo.com/video/181787288" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
 

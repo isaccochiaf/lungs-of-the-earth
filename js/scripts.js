@@ -23,19 +23,6 @@ $(document).ready(function () {
     });
 });
 
-function onScroll(event) {
-    var scrollPos = $(document).scrollTop();
-    $('.top-bar-menu a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.top-bar-menu ul li a').removeClass("active-list");
-            currLink.addClass("active-list");
-        } else {
-            currLink.removeClass("active-list");
-        }
-    });
-}
 
 
 
