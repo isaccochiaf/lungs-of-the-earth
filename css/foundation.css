@@ -5456,6 +5456,15 @@ table tr td {
     position: relative;
 }
 
+.flex-video-03 {
+    height: 0;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    padding-bottom: 67.5%;
+    padding-top: 1.5625rem;
+    position: relative;
+}
+
 
 
 .flex-video.widescreen {

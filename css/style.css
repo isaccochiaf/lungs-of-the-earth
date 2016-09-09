@@ -20,7 +20,7 @@ body {
         width: 20px;
     }
     p.quote {
-        background-image: url(../images/quote_small.jpg);
+        background-image: url(../images/quote_small.png);
         background-repeat: no-repeat;
         font-size: 18px;
         padding: 0 10px 0 50px;
@@ -319,7 +319,7 @@ header.smaller #title-head {
     color: #445f2e
 }
 .quote {
-    background-image: url(../images/quote.jpg);
+    background-image: url(../images/quote.png);
     background-repeat: no-repeat;
     font-size: 23px;
     padding: 0 30px 0 100px
