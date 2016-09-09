@@ -125,6 +125,21 @@ header #title-head {
     -o-transition: all 0.9s;
     transition: all 0.9s;
 }
+#title-head ul li {
+    display: inline;
+    font-family: 'Lyon Text OSF Web', serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 10px;
+    padding-bottom: 5px
+}
+#title-head ul li:hover {
+    border-bottom: 1px solid #fff
+}
+#title-head ul li a {
+    color: white;
+    font-weight: normal;
+}
 header nav {
     display: inline-block;
     float: right;
@@ -425,7 +440,6 @@ footer p {
 .sottotitolo {
     font-style: italic;
 }
-
 .fonte {
     font-size: 80%
 }

@@ -4185,10 +4185,10 @@ a img {
 /* Default paragraph styles */
 
 p {
-    font-family: 'Lyon Text OSF Web', serif;
-    ;
-    font-size: 1.059rem;
-    font-weight: normal;
+    font-family: 'Lyon Text OSF Web',
+serif;
+font-size: 1.059rem;
+font-weight: normal;
     line-height: 1.6;
     margin-bottom: 1.25rem;
     text-rendering: optimizeLegibility;
@@ -5451,10 +5451,12 @@ table tr td {
     height: 0;
     margin-bottom: 1rem;
     overflow: hidden;
-    padding-bottom: 67.5%;
+    padding-bottom: 47.5%;
     padding-top: 1.5625rem;
     position: relative;
 }
+
+
 
 .flex-video.widescreen {
     padding-bottom: 56.34%;
