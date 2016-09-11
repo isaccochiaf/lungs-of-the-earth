@@ -1,0 +1,574 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+
+<head>
+
+    <!--[if lt IE 9]>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  	<script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+  	<script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+	<![endif]-->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lungs of the Earth</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/font/stylesheet.css" />
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <meta name="Title" content="Lungs of the Earth" />
+    <meta name="og:title" content="Lungs of the Earth" />
+    <meta property="og:site_name" content="Lungs of the Earth" />
+    <meta property="og:url" content="http://www.internazionale.it/webdoc/ewaste-republic/" />
+    <meta name="description" content="Benvenuto nelLungs of the earth. Guarda il web-documentario" />
+    <meta name="og:description" content="Benvenuto nelLungs of the earth. Guarda il web-documentario" />
+    <meta name="og:image" content="http://www.internazionale.it/webdoc/ewaste-republic/images/computer.jpg" />
+    <link rel="image_src" href="http://www.internazionale.it/webdoc/ewaste-republic/images/computer.jpg" />
+
+    <meta name="keywords" content="e-waste,electronic waste,second hand electronics,rifiuti elettronici,accra,ghana,agbogbloshie,jacopo ottaviani,isacco chiaf">
+    <meta name="robots" content="index,follow">
+
+
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+    <link href="video-js/video-js.css" rel="stylesheet">
+    <script src="video-js/video.js"></script>
+
+    <style type="text/css">
+        .vjs-default-skin .vjs-play-progress,
+        .vjs-default-skin .vjs-volume-level {
+            background-color: #e18f07
+        }
+        
+        .vjs-default-skin .vjs-control-bar {
+            font-size: 68%
+        }
+
+    </style>
+
+
+    <script>
+        function init() {
+            window.addEventListener('scroll', function(e) {
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 300,
+                    header = document.querySelector("header");
+                if (distanceY > shrinkOn) {
+                    classie.add(header, "smaller");
+                } else {
+                    if (classie.has(header, "smaller")) {
+                        classie.remove(header, "smaller");
+                    }
+                }
+            });
+        }
+        window.onload = init();
+
+        $(function() {
+            $(".show").click(
+                function() {
+                    $(".overlay-Big").fadeIn();
+                    event.preventDefault();
+                });
+            $("#close").click(
+                function() {
+                    $(".overlay-Big").fadeOut();
+                });
+        });
+
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div class="header overlay-Big">
+        <a id="close">
+            <img src="images/overlay-close.png" width="40px">
+        </a>
+        <div class="overlay-first-band">
+            <div class="row">
+                <div class="medium-8 medium-centered columns">
+                    <h4 style="color:#fff">Lungs of the Earth</h4>
+                    <br />
+                    <a id="ref_tw" href="http://twitter.com/home?status=Vita%2C morte e miracoli dei rifiuti elettronici. Guarda il web documentario URL %23LifeDeathMiraclesEwaste @JacopoOttaviani&related=JacopoOttaviani" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="wrapper">
+        <header class="top-bar-menu">
+            <div class="container clearfix">
+
+                <!-- --------------------------- LOGO - ADD COMMENT TO REMOVE------------------- -->
+
+                <a href="#"> <img class="hide-for-small" src="images/logo-spiegel.png"> </a>
+                <a href="#"> <img class="show-for-small-only" src="images/logo-spiegel.png"> </a>
+
+                <!-- ---------------------------  END LOGO - CLOSE COMMENT TO REMOVE------------------- -->
+
+                <div id="title-head" class="hide-for-medium hide-for-small">
+                    <ul>
+                        <li>1.<a class="scroll" href="#fires"> On the line of fire</a></li>
+                        <li>2.<a class="scroll" href="#drones"> Conservation drones</a></li>
+                        <li>3.<a class="scroll" href="#bears"> The forgotten bears</a></li>
+                        <li>4.<a class="scroll" href="#connection"> Guardians of the forest</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul class="hide-for-small">
+                        <li>
+                            <a id="ref_tw" href="http://twitter.com/home?status=La repubblica dell’e-waste. Guarda il web documentario di @JacopoOttaviani su @Internazionale: http://www.internazionale.it/webdoc/ewaste-republic %23ewasterepublic&related=JacopoOttaviani" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;">
+                                <i class="fa fa-twitter"></i></a>
+                        </li>
+
+                        <li>
+                            <script>
+                                function fbs_click() {
+                                    u = location.href;
+                                    t = document.title;
+                                    window.open('http://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t), 'sharer', 'toolbar=0,status=0,width=626,height=436');
+                                    return false;
+                                }
+
+                            </script>
+                            <a href="http://www.facebook.com/sharer/sharer.php?u=<;url>" class="fb_share_button_2" onclick="return fbs_click()" target="_blank" style="text-decoration:none;"> <i class="fa fa-facebook"></i></a>
+
+                        </li>
+                        <!-- <li class="show"><a href="#"><i class="fa fa-info-circle"> about</i></a></li>-->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- /header -->
+
+
+
+        <div class="row title-page" id="top">
+            <div class=" large-12 columns">
+                <h1 class="animated fadeIn" id="delay-01" style="color:#44602e"> Lungs of the Earth </h1>
+            </div>
+        </div>
+
+        <img class="animated fadeIn logo-style" id="delay-02" src="images/logo_loe.jpg">
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns intro-names">
+                <div class="names">
+                    <p><b>Jacopo Ottaviani</b>
+                        <a href="https://twitter.com/JacopoOttaviani" target="_blank"> <i class="fa fa-twitter" style="color:#00aced"></i>
+                        </a>
+                    </p>
+                    <br />
+                    <p>Photography and design: Isacco Chiaf</p>
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+                    <span class="firstcharacter">F</span>rom 1990 to 2015 the world has lost 129 million hectares of forests, destroyed by the fury of chainsaws, fire and cement. The deforestation has advanced with an astounding pace: about ten hectares of forest – the equivalent of fourteen football fields – disappear every minute.
+                    <br>
+                    <br> Over the past quarter century the global speed of deforestation has decreased. However, from 2010 to 2015 the world has documented a net loss of 3.3 million hectares per year: a shrinkage which is mainly due to human activities such as agriculture, extraction of raw materials and urbanization.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <img src="images/forest_loss.svg">
+        </div>
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p class="fonte">Source: <a href="http://www.fao.org/forest-resources-assessment/en/" target="_blank"> Global Forest Resources Assessment (Fao, 2015)</a> </p>
+                <p>
+                    In certain regions such as China and Europe forests are expanding, mainly thanks to reforestation programs and an increase of tree cultivation. In other areas of the world, mainly in the tropics, forests are constantly menaced by humankind. The main rainforest basins in the Amazon, Congo and Southeast Asia lose millions of hectares every year. Indonesia, for example, has lost about 2.6 million hectares of forest only in 2015, due to one of the most dramatic fires in recent times.
+                    <br>
+                    <br> The forests, along with the oceans, absorb enormous amounts of carbon dioxide circulating in the atmosphere. Protecting the earth’s lungs is fundamental to protect the planet’s biodiversity and to oppose global warming.
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+        <!-- --------------------------------------CHAPTER_01 .------------------------ -->
+
+
+
+
+        <div class="flex-video widescreen vimeo" id="fires">
+            <iframe src="https://player.vimeo.com/video/182289695" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <br>
+                <br>
+                <br>
+                <p>
+                    <span class="firstcharacter">“I</span> know the fire will be back next year. I know we don’t have the equipment we need and that we’ll have to fight it with our bare hands. But that doesn’t matter: we’ll fight it. Our spirit is the spirit of the forest.” When he speaks of the forests he was born and grew up in, Basuki Budi Santoso’s eyes fill with tears.
+                    <br>
+                    <br> Making use of what little means they have at their disposal, Basuki and his small team from the <a href="http://bit.ly/friendsnationalparkfdt" target="_blank">Friends of the national park</a> foundation work to defend the Tanjung Puting reserve from the flames that periodically affect it. The park, located in Central Kalimantan, in the southern part of the island of Borneo, has been at the core of the large fires which have struck Indonesia throughout 2015. Burning unabated for weeks, the fire has turned about 2 million hectares of forest to cinder, mainly in the islands of Sumatra and Kalimantan.
+                    <br>
+                    <br> Basuki’s base camp can be reached by navigating over the river Kumai. A small dock leads to a path that crosses the forest, where the sunbeams cut through the humidity and the water in the streams take on the colour of tea. After a few hours’ walk the Beguruh reforestation area can be reached. This is where Basuki and his men are operating to help the forest come back to life.
+                </p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <img src="images/satellite.jpg">
+        <br />
+        <br />
+        <br />
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+                    Basuki’s men are having a moment’s rest in the shade of a wooden shed. Some hammocks, a gas burner for making coffee, an open air shower. A few metres away, in the shade, pots are lined up holding the seedlings of the trees. “This is our plant nursery. This is where we look after the trees that will repopulate the forest that burned down”, explains Basuki.
+
+                    <br>
+                    <br> “The fires come back every year, especially from September onwards, in the dry season. And the fire keeps burning even when it seems to be extinguished, because it’s burning underground, in the peat”, says Basuki. “When the fires come back, we work restlessly to extinguish them. At night, we take turns sleeping few metres away from the flames, sometimes someone can lose their life, suffocated by the smoke. In times of respite we plant the trees back into the burnt areas instead, and prepare for our next battle.”
+                    <br>
+                    <br> Basuki spends most of the year in the jungle of Central Kalimantan, coordinating the interventions against the fires and various reforestation projects. His salary allows him to fly twice a year to see his wife and two children, who live in Jakarta.
+                    <br />
+                </p>
+                <hr>
+                <h4>Indonesia in flames</h4>
+                <br />
+                <img src="images/burn_calendar.jpg">
+                <p class="fonte">Source: <a href="http://www.globalfiredata.org/data.html" target="_blank"> Global Fire Data</a> </p>
+                <hr>
+                <p>
+                    From September to October 2015 Indonesia has been the scene of one of the most disastrous fires in recent years. Burning unabated for weeks, the flames have affected over 2.6 million hectares of forest, mainly in the islands of Sumatra and Kalimantan. Enormous clouds of smoke have reached the bordering areas, making it to Malaysia, Singapore and Thailand, and the toxic gases have been inhaled by at least 43 million people. The fire has been defined by the Indonesian Agency for Meteorology, Climatology and Geophysics as a “crime against humanity of extraordinary proportions”.
+                    <br>
+                    <br> The most authoritative theories blame the fires on individuals interested in the acquisition of new lands – such as certain companies which produce palm oil – and on farmers who use the fire to prepare lands for cultivation. The dry season and the prolonged combustion within the vast peat stretches make extinguishing operations even more complicated. </p>
+                <hr>
+                <p class="quote LyonTextOSFWeb-Bold">
+                    Almost all fires detected in Indonesia are caused by mankind to prepare the lands for farming.
+                </p>
+                <hr>
+                <p> “Almost all fires detected in Indonesia are caused by man for farming reasons. A fire is the cheapest way to empty out the land for agriculture. Fires can be ignited by individuals who control vast plantations, or small farmers working in their own parcels of land with traditional methods”, explains Peter Holmgren, director of the Centre for International Forest Research (CIFOR), a centre researching tropical forests based in Bogor, near Jakarta.
+                    <br>
+                    <br> In Indonesia, <a href="http://www.globalfiredata.org/updates.html#2015_indonesia" target="_blank">according to Global Fire Data’s estimates</a>, over 130,000 fires have been detected in 2015 only, producing almost 2 billion tons of greenhouse gases. More than the amount Germany or Japan produce in a year.
+                    <br>
+                    <br> Forest fires are a global problem. “According to Nasa and to the Global Fire Database, an average of 4.5 million hectares of rainforest go up in flames every year”, explains Guido van der Werf, earth and life sciences researcher for the Free University of Amsterdam. “Almost all fires in tropical areas are caused by mankind. In temperate areas both natural fires and fires caused by humans are detected, while in the boreal belt the primary cause of fires is lightning.”
+                    <br />
+                </p>
+
+
+            </div>
+        </div>
+
+
+
+        <!-- --------------------------------------CHAPTER_02 .------------------------ -->
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="flex-video widescreen vimeo" id="drones">
+            <iframe src="https://player.vimeo.com/video/182289303" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <br>
+                <br>
+                <p>
+                    <span class="firstcharacter">“T</span>he drone’s hardware can be bought with about 2000 US dollars, while the software for flying it is free and open source”, explains Keeyen Pang, director of Conservation Drones’ Asian operations, while his son builds a small drone and inserts its flight mission. “All you need to do is install a micro-camera on the drone to obtain a high definition mapping of the forest.”
+                    <br>
+                    <br> “Our drones are a cheap and effective instrument against deforestation and that support the conservation of nature”, explains Lian Pin Koh, professor of Applied Ecology at Adelaide University. Along with the Swiss biologist Serge Wich, Lian Pin Koh is the founder of <a href="http://bit.ly/conservation-drones" target="_blank">Conservation drones</a>, a non-profit organization which brings together an international group of ecology experts and remote controlled aircraft enthusiasts.</p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="row">
+
+
+            <br>
+
+
+
+
+
+            <div class="flex-video-03">
+                <iframe frameborder="0" class="juxtapose" width="100%" height="788" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=8234250c-740c-11e6-b53e-0edaf8f81e27"></iframe>
+            </div>
+
+            <p class="sottotitolo">An area of the Gunung Leuser national park, in Indonesia, has been cut down illegally, as detected by the Conservation Drones team. A strip of trees and plants has been left along the river to hide the deforested area.
+            </p>
+            <p class="fonte">Source: <a href="https://conservationdrones.org/" target="_blank">Conservation Drones</a> </p>
+            <hr>
+
+
+            </video>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+
+                    “We’ve been helping the environmental defence organization drones fly since 2012. It’s important to supply low cost technology, mainly in developing countries, to fly over hard to access areas and control their state of conservation”, the co-founders of Conservation Drones tell us.
+                    <br>
+                    <br> “Conservation Drones often gets cooperation proposals from organizations from all over the world. Over time, our network of experts in drones for conservation has expanded”, explains Keeyen Pang, as he checks the final configurations and prepares for the test launch.
+                </p>
+                <hr>
+                <p class="quote LyonTextOSFWeb-Bold">
+                    In Southeast Asia drones allow the mapping of palm oil cultivations, one of the primary causes of deforestation in the region
+                </p>
+                <hr>
+                <p> Lian Pin Koh and Serge Wich’s drones fly over Tanzania, where they are used to monitor chimpanzee conservation. They fly in Suriname, where a project for monitoring the virgin forests is in progress. In Indonesia, where they are used to observe the endangered orangutan population. And in the rest of south-east Asia, where drones are useful for the mapping of palm oil cultivations, one of the primary causes of deforestation in the region.
+                    <br>
+                    <br> Conservation Drones’ flight missions are already giving tangible results. “In 2014, for example, images taken by our aircrafts have detected an illegally deforested area in a Sumatran natural reserve”, Lian Pin Koh proudly explains. “Our images have been used as proof by the Indonesian authorities, and the perpetrators of this crime have been put on trial.”
+
+                    <br />
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <!-- --------------------------------------CHAPTER_03 .------------------------ -->
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="flex-video widescreen vimeo" id="bears">
+            <iframe src="https://player.vimeo.com/video/182289671" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <br>
+                <br>
+                <p>
+                    <span class="firstcharacter">I</span>n a remote corner of the Sabah rainforest, in the north-eastern end of the island of Borneo, a small team of zoologists is working for the conservation of a little-known animal: the sun bear. The <a href="http://bit.ly/sunbearscenter" target="_blank">Bornean Sun Bear Conservation Centre</a>, founded in 2008 by Malaysian zoologist Wong Siew Te, is the only reserve in the world where this endangered species is actively preserved.
+                    <br>
+                    <br>“Not many people can imagine that these bears live in the tropical forest too, to the extent that we have nicknamed them ‘the forgotten bears’”, says Tee Thye Lim, who is in charge of the bears in the conservation centre which have been removed from captivity. “Unfortunately, even though they are not well-known worldwide or perhaps because of this, they are endangered. In the past 30 years we have lost about 30 percent of specimens.”
+                    <br>
+                    <br> In some South-East Asian regions sun bear cubs are captured to be kept as pets, only to be abandoned once they grow larger. They are also victims of illegal commerce, as according to Chinese medicine the bears’ gall-bladder and paws have healing powers. To this we must add deforestation – mainly caused by the cultivation of palm oil – which has considerably reduced their natural habitat.
+                    <br>
+                    <br> The centre’s experts explain that the extinction of sun bears would cause a chain reaction in the forest’s ecosystem. “Plants and animals live in harmony and the removal of a single species can disrupt the jungle’s balance. The sun bears, for example, are true engineers of the forest”, Tee Thye Lim explains, “When looking for the honey they feed on, they make cavities within the trees where other animals, such as the great hornbill, will then find shelter.”
+                </p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <hr>
+                <img src="images/biodiversity.jpg">
+                <p class="fonte">Source: <a href="http://www.iucnredlist.org/" target="_blank"> The IUCN Red List of threatened species (2016)</a> </p>
+                <hr>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+                    The sun bear of Borneo is just one of the many currently endangered species on our planet. According to the red list compiled by the International Union for Conservation of Nature (IUCN) at least 20,000 species of plants and animals are currently at risk of disappearing from this planet. Furthermore, the data revealed by the red list is incomplete, as not every species of animals and plants has been examined by biologists.
+
+                </p>
+                <hr>
+                <p class="quote LyonTextOSFWeb-Bold">
+                    The destruction of natural habitats, the commercial exploitation of lands, pollution and climate change are some of the main causes of worldwide biodiversity loss
+                </p>
+                <hr>
+                <p>
+                    The destruction of natural habitats, the commercial exploitation of lands, pollution and climate change are some of the main causes of worldwide biodiversity loss. “We are in the heart of a biodiversity crisis. We are losing about one thousand species of animals and plants every year”, explains Professor Henrique Pereira, head of research at the German Centre for Integrative Biodiversity Research of Leipzig University. “Biodiversity is fundamental for the planet’s balance, but also for the health of humankind. Many of the medicines we use come from compounds extracted from animals or plants. Every time a plant or an animal becomes extinct, we lose our chance to discover compounds which can potentially be useful for the invention of a new medication.”
+
+
+                    <br />
+                </p>
+
+
+            </div>
+        </div>
+
+
+
+
+        <!-- --------------------------------------CHAPTER_04 .------------------------ -->
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="flex-video widescreen vimeo" id="connection">
+            <iframe src="https://player.vimeo.com/video/182289315" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <br>
+                <br>
+                <p>
+                    <span class="firstcharacter">A</span> smartphone, fastened to a tree trunk in the rainforest, powered by solar panels and with an active microphone constantly connected to the internet. This is the concept behind <a href="http://bit.ly/rfcxorg" target="_blank">Rainforest Connection</a>, he device created by Topher White, a young engineer and physicist from San Francisco devoted to the protection of this planet’s forests.
+                    <br>
+                    <br> “The device created by Topher allows to listen to the sounds of the forest remotely, using a simple smartphone,” says James Reed as, harnessed within his equipment, he handles an odd plastic box with an antenna. “I’m here to help Topher construct the devices, here in the forests of Borneo. And in the meantime I’m teaching the local communities to climb safely, so that in the future they can install and look after the devices themselves.”
+                    <br>
+                    <br> Rainforest Connection’s devices transmit the incoming audio to the cloud, from which a computer program can examine the inputted sounds. When the software detects an unusual sound, such as the rumble of a chainsaw or the shot of a rifle, an alarm message is sent to the local authorities or to the associations which can take action to stop illegal deforestation activities or poaching.
+                </p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <hr>
+                <h4>How does Rainforest Connection work?</h4>
+
+                <img src="images/rainforestconnection.jpg">
+                <p class="fonte">Source: <a href="https://rfcx.org/" target="_blank"> Rain Forest Connection</a> </p>
+                <hr>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+                    “We’re testing Rainforest Connection in all the tropical forests in the world. Our objective is to manage to protect 20 to 30 hectares using Rainforest Connection within the next two years“, explains Topher, who spends half of his time in his San Francisco lab and the other half in rainforests spread all over the world.
+                    <br>
+                    <br> “It’s fundamental for us to set up partnerships with local communities and organizations working to defend the forests”, explains White. “Initiatives such as James Reed’s <a href="http://bit.ly/treemonkey" target="_blank">Tree Monkey</a> are fundamental for us. James and his team help us to physically install the devices and organize climbing training sessions to teach the local communities to climb the tallest rainforest trees safely.”
+                    <br>
+                    <br> According to Topher’s estimates, a single device can detect the sound of a chainsaw within an area of about three square kilometres. This means that using just a few devices, positioned in strategic areas (for example the forest’s access points), very wide forest areas can be protected.
+                </p>
+                <hr>
+                <p class="quote LyonTextOSFWeb-Bold">
+                    A simple cellphone connected to the internet can become a guardian of the forest
+                </p>
+                <hr>
+                <p>
+                    Topher White came up with the idea for this device in a rainforest. “In 2011 I was in Kalimantan, in Indonesia. I was walking through the jungle with my local guide when we came across an area which had been cut down illegally. The enraged local guide told me how hard it was to stop these activities despite the presence of forest rangers. So I realized that a simple phone connected to the internet could have been transformed into a sentry, and I spent the past years developing the device’s engineering.”
+                    <br>
+                    <br> Rainforest Connection’s devices can potentially also be applied in other settings. The sound transmitted by the cloud can be used by researchers to study forests, for example to examine animal migration or to monitor the ecosystem’s rhythms. Or, more simply, it can be turned into a radio to listen to the forest’s orchestra from your own armchair, at home. “We’ve recently started a web radio that allows anyone, in any part of the world, to listen to live forest sounds. At the moment it’s only available to anyone who decides to <a href="http://bit.ly/rfcxorg" target="_blank">fare una donazione</a> and help us transform even more smartphones into forest guardians.”
+
+
+                    <br />
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-12 medium-centered columns">
+                <hr>
+                <h4>The evolution of forests from 1990 to 2015</h4>
+                <div class="flex-video">
+                    <iframe src="https://jackottaviani.carto.com/viz/1479ccd6-7431-11e6-981d-0ef24382571b/embed_map" width="400" height="100" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+                </div>
+                <p class="fonte" style="padding:8px">Source: <a href="http://www.fao.org/forest-resources-assessment/en/" target="_blank"> Global Forest Resources Assessment (Fao, 2015)</a> </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+                    “Forests are disappearing on a global level at a rate that is object of scientific debate. Data provided by the United Nations reveals a reduction of deforestation over the past decades”, explains Peter Holmgren, director of the Centre for International Forestry Research. “This is good news, but in certain regions of the world such as Indonesia, Brazil and Central Africa we are still losing forests at a worrying rate.”
+                    <br />
+                </p>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="row">
+                <div class="medium-9 medium-centered columns">
+                    <br />
+                    <a href="#"><h6>Lungs of the Earth</h6></a>
+                    <br />
+                    <center>
+                        <a href="#"><img src="images/logo_smaller.jpg"></a>
+                    </center>
+
+                    <br />
+                    <p>A reportage by <a href="https://twitter.com/JacopoOttaviani" target="_blank"> Jacopo Ottaviani</a> developed with the support of the Innovation in Development Reporting Grant program of the European Journalism Centre (EJC), funded by the Bill and Melinda Gates Foundation. Photography and design: Isacco Chiaf. Video Editing: Alberto Abbate. English translation: Robin Luis Fernandez.
+
+                    </p>
+
+                    <br />
+                    <center>
+                        <img width="100px" src="images/footer_ejclogo.png">
+                    </center>
+                    <p><i>Innovation in Development Reporting Grant</i>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </footer>
+
+        <!-- --------------------------------------CHAPTER_04 .------------------------ -->
+
+
+        <script src="js/videoresize.js"></script>
+        <script src="js/waypoint.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/foundation/foundation.tab.js"></script>
+        <script>
+            $(document).foundation();
+
+        </script>
+
+
+</body>
+
+</html>
