@@ -1,0 +1,581 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+
+<head>
+
+    <!--[if lt IE 9]>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  	<script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+  	<script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+	<![endif]-->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los pulmones de la Tierra</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/font/stylesheet.css" />
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <meta name="Title" content="Lungs of the Earth" />
+    <meta name="og:title" content="Lungs of the Earth" />
+    <meta property="og:site_name" content="Lungs of the Earth" />
+    <meta property="og:url" content="http://www.elpais.es" />
+    <meta name="description" content="Lungs of the earth. Un viaje por las selvas del mundo" />
+    <meta name="og:description" content="Lungs of the earth. Un viaje por las selvas del mundo" />
+    <meta name="og:image" content="http://www.elpais.es/images/computer.jpg" />
+    <link rel="image_src" href="http://www.elpais.es/images/computer.jpg" />
+
+    <meta name="keywords" content="">
+    <meta name="robots" content="index,follow">
+
+
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+    <link href="video-js/video-js.css" rel="stylesheet">
+    <script src="video-js/video.js"></script>
+
+    <style type="text/css">
+        .vjs-default-skin .vjs-play-progress,
+        .vjs-default-skin .vjs-volume-level {
+            background-color: #e18f07
+        }
+        
+        .vjs-default-skin .vjs-control-bar {
+            font-size: 68%
+        }
+
+    </style>
+
+
+    <script>
+        function init() {
+            window.addEventListener('scroll', function(e) {
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                    shrinkOn = 300,
+                    header = document.querySelector("header");
+                if (distanceY > shrinkOn) {
+                    classie.add(header, "smaller");
+                } else {
+                    if (classie.has(header, "smaller")) {
+                        classie.remove(header, "smaller");
+                    }
+                }
+            });
+        }
+        window.onload = init();
+
+        $(function() {
+            $(".show").click(
+                function() {
+                    $(".overlay-Big").fadeIn();
+                    event.preventDefault();
+                });
+            $("#close").click(
+                function() {
+                    $(".overlay-Big").fadeOut();
+                });
+        });
+
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div class="header overlay-Big">
+        <a id="close">
+            <img src="images/overlay-close.png" width="40px">
+        </a>
+        <div class="overlay-first-band">
+            <div class="row">
+                <div class="medium-8 medium-centered columns">
+                    <h4 style="color:#fff">Los pulmones de la Tierra</h4>
+                    <br />
+                    <a id="ref_tw" href="http://twitter.com/home?status=Vita%2C morte e miracoli dei rifiuti elettronici. Guarda il web documentario URL %23LifeDeathMiraclesEwaste @JacopoOttaviani&related=JacopoOttaviani" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="wrapper">
+        <header class="top-bar-menu">
+            <div class="container clearfix">
+
+                <!-- --------------------------- LOGO - ADD COMMENT TO REMOVE------------------- -->
+
+                <a href="#"> <img class="hide-for-small" src="images/logo-spiegel.png"> </a>
+                <a href="#"> <img class="show-for-small-only" src="images/logo-spiegel.png"> </a>
+
+                <!-- ---------------------------  END LOGO - CLOSE COMMENT TO REMOVE------------------- -->
+
+                <div id="title-head" class="hide-for-medium hide-for-small">
+                    <ul>
+                        <li>1.<a class="scroll" href="#fires"> En primera línea de fuego</a></li>
+                        <li>2.<a class="scroll" href="#drones"> Conservation Drones</a></li>
+                        <li>3.<a class="scroll" href="#bears"> Los osos olvidados</a></li>
+                        <li>4.<a class="scroll" href="#connection"> Los guardianes de la selva</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul class="hide-for-small">
+                        <li>
+                            <a id="ref_tw" href="http://twitter.com/home?status=La repubblica dell’e-waste. Guarda il web documentario di @JacopoOttaviani su @Internazionale: http://www.internazionale.it/webdoc/ewaste-republic %23ewasterepublic&related=JacopoOttaviani" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;">
+                                <i class="fa fa-twitter"></i></a>
+                        </li>
+
+                        <li>
+                            <script>
+                                function fbs_click() {
+                                    u = location.href;
+                                    t = document.title;
+                                    window.open('http://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t), 'sharer', 'toolbar=0,status=0,width=626,height=436');
+                                    return false;
+                                }
+
+                            </script>
+                            <a href="http://www.facebook.com/sharer/sharer.php?u=<;url>" class="fb_share_button_2" onclick="return fbs_click()" target="_blank" style="text-decoration:none;"> <i class="fa fa-facebook"></i></a>
+
+                        </li>
+                        <!-- <li class="show"><a href="#"><i class="fa fa-info-circle"> about</i></a></li>-->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- /header -->
+
+
+
+        <div class="row title-page" id="top">
+            <div class=" large-12 columns">
+                <h1 class="animated fadeIn" id="delay-01" style="color:#44602e"> Los pulmones de la Tierra </h1>
+            </div>
+        </div>
+
+        <img class="animated fadeIn logo-style" id="delay-02" src="images/logo_loe.jpg">
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns intro-names">
+                <div class="names">
+                    <p><b>Jacopo Ottaviani</b>
+                        <a href="https://twitter.com/JacopoOttaviani" target="_blank"> <i class="fa fa-twitter" style="color:#00aced"></i>
+                        </a>
+                    </p>
+                    <br />
+                    <p>Photography and design: Isacco Chiaf</p>
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+                    <span class="firstcharacter">E</span>ntre 1990 y 2015, el mundo perdió 129 millones de hectáreas de bosque destruidas por la furia de las motosierras, el fuego y el cemento. La deforestación ha avanzado a un ritmo asombroso: alrededor de 10 hectáreas de bosque –el equivalente a 14 campos de fútbol– desaparecen cada minuto.
+                    <br>
+                    <br> A lo largo del último cuarto de siglo ha disminuido la velocidad de la deforestación a escala planetaria. No obstante, entre 2010 y 2015 el mundo registró una pérdida neta de 3,3 millones de hectáreas al año, una merma debida principalmente a actividades humanas como la agricultura, la extracción de materias primas y la urbanización.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <img src="images/forest_loss.svg">
+        </div>
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p class="fonte">Source: <a href="http://www.fao.org/forest-resources-assessment/en/" target="_blank"> Global Forest Resources Assessment (Fao, 2015)</a> </p>
+                <p>
+                    En determinadas regiones, como China o Europa, los bosques están en expansión, sobre todo gracias a los programas de reforestación y a un incremento de los cultivos arbóreos. En otras zonas del mundo, especialmente en los trópicos, las selvas se encuentran constantemente amenazadas por el ser humano. Las principales cuencas de pluvisilva de la Amazonia, Congo y el sudeste de Asia pierden millones de hectáreas cada año. En Indonesia, por ejemplo, han desaparecido unos 2,6 millones de hectáreas de bosque tropical solo en 2015 a causa de uno de los incendios más trágicos de los últimos tiempos.
+                    <br>
+                    <br> Los bosques, junto con los océanos, absorben enormes cantidades del dióxido de carbono que circula en la atmósfera. Proteger los pulmones de la Tierra es fundamental para preservar la biodiversidad del planeta y combatir el calentamiento global.
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+        <!-- --------------------------------------CHAPTER_01 .------------------------ -->
+
+
+
+
+        <div class="flex-video widescreen vimeo" id="fires">
+            <iframe src="https://player.vimeo.com/video/182289695" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <br>
+                <br>
+                <br>
+                <p>
+                    <span class="firstcharacter">“S</span> é que el fuego volverá el año que viene. Sé que no tenemos el equipo que necesitamos y que tendremos que luchar contra él solo con nuestras manos. Pero no importa, lucharemos. Nuestro espíritu es el espíritu de la selva”. Cuando habla de los bosques en los que nació y creció, los ojos de Basuki Budi Santoso se llenan de lágrimas.
+                    <br>
+                    <br> Sirviéndose de los escasos medios a su disposición, Basuki y su pequeño equipo de la fundación <a href="http://bit.ly/friendsnationalparkfdt" target="_blank">Amigos del Parque Nacional</a> trabajan para defender la reserva de Tanjung Puting de las llamas que la afectan periódicamente. El parque, situado en Kalimantán Central, en la parte meridional de la isla de Borneo, ha estado en el epicentro de los grandes incendios que han golpeado Indonesia a lo largo de 2015. El fuego, que ardió sin interrupción durante semanas, redujo a cenizas unos dos millones de hectáreas de bosque, principalmente en las islas de Sumatra y Borneo.
+                    <br>
+                    <br> Se puede llegar al campamento base de Basuki navegando por el río Kumai. Un pequeño muelle conduce a un sendero que atraviesa la selva, donde los rayos de sol que penetran a través de la humedad y el agua de los arroyos adquieren el color del té. Después de unas cuantas horas caminando se llega al área de reforestación de Beguruh. Aquí es donde Basuki y sus hombres trabajan para contribuir a que la selva vuelva a la vida.
+                </p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <img src="images/satellite.jpg">
+        <br />
+        <br />
+        <br />
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+                    Los hombres de Basuki se están tomando un breve descanso a la sombra de un cobertizo de madera. Hay varias hamacas, un hornillo de gas para hacer café y una ducha al aire libre. Unos metros más allá, protegidos del sol, se alinean los botes que contienen las plántulas de los árboles. “Este es nuestro invernadero. Aquí es donde cuidamos los árboles que repoblarán la selva que se ha quemado”, explica Basuki.
+
+                    <br>
+                    <br> “Los incendios vuelven cada año, sobre todo a partir de septiembre, en la estación seca. Y el fuego sigue ardiendo incluso cuando parece que se ha apagado, porque arde bajo la superficie, en la turba”, continúa. “Cuando vuelven los incendios, trabajamos sin descanso para apagarlos. Por la noche hacemos turnos durmiendo a pocos metros de las llamas; a veces alguien llega a perder la vida sofocado por el humo. En cambio, en las épocas en que tenemos un respiro, volvemos a plantar los árboles en las zonas quemadas y nos preparamos para la próxima batalla”.
+                    <br>
+                    <br> Basuki spends most of the year in the jungle of Central Kalimantan, coordinating the interventions against the fires and various reforestation projects. His salary allows him to fly twice a year to see his wife and two children, who live in Jakarta.
+                    <br> Según cálculos de la Base de Datos sobre Emisiones Mundiales por Incendios, en 2015 se observaron más de 130.000 fuegos, que generaron casi 2.000 millones de toneladas de gases de efecto invernadero, más de lo que Alemania o Japón producen en un año.
+                    <br />
+                </p>
+                <hr>
+                <h4>Indonesia in flames</h4>
+                <br />
+                <img src="images/burn_calendar.jpg">
+                <p class="fonte">Source: <a href="http://www.globalfiredata.org/data.html" target="_blank"> Global Fire Data</a> </p>
+                <hr>
+                <p>
+                    Entre septiembre y octubre de 2015, Indonesia fue escenario de uno de los incendios más catastróficos de los últimos años. Las llamas, que ardieron sin interrupción durante semanas, afectaron a más de 2,6 millones de hectáreas de selva, principalmente en las islas de Sumatra y Borneo. Las enormes nubes de humo alcanzaron las zonas limítrofes y penetraron en Malasia, Singapur y Tailandia. Al menos 43 millones de personas inhalaron los gases tóxicos. La Agencia de Meteorología, Climatología y Geofísica indonesia calificó el incendio de “crimen contra la humanidad de extraordinarias proporciones”.
+                    <br>
+                    <br> Las teorías más acreditadas culpan de los incendios a sujetos interesados en la adquisición de nuevas tierras –como determinadas empresas que producen aceite de palma– y a los agricultores que utilizan el fuego para preparar las tierras para el cultivo. La estación seca y la combustión prolongada en el interior de la extensa capa de turba complica aún más las labores de extinción. </p>
+                <hr>
+                <p class="quote LyonTextOSFWeb-Bold">
+                    Casi todos los incendios detectados en Indonesia son provocados por el ser humano para preparar las tierras para el cultivo.
+                </p>
+                <hr>
+                <p> “Casi todos los incendios detectados en Indonesia han sido provocados por el hombre por causas relacionadas con la agricultura. El fuego es el medio más sencillo para despejar el suelo para el cultivo. Los incendios los pueden desencadenar personas que controlan grandes plantaciones o pequeños agricultores que trabajan sus propias parcelas de tierra con métodos tradicionales”, explica Peter Holmgren, director del Centro de Investigación Forestal Internacional (CIFOR, por sus siglas en inglés), un instituto dedicado al estudio de los bosques tropicales con sede en Bogor, cerca de Yakarta.
+                    <br>
+                    <br> Según cálculos de la <a href="http://www.globalfiredata.org/updates.html#2015_indonesia" target="_blank">Base de Datos sobre Emisiones Mundiales por Incendios</a>, solo en 2015 se detectaron más de 130.000 incendios que generaron casi 2.000 millones de toneladas de gases de efecto invernadero, más de lo que Alemania o Japón producen en un año.
+
+                    <br>
+                    <br> Los incendios forestales son un problema mundial. “Según la NASA y la Base de Datos sobre Emisiones Mundiales por Incendios, cada año arden una media de 4,5 millones de hectáreas de selva”, informa Guido van der Werf, investigador especialista en ciencias de la tierra y de la vida de la Universidad Libre de Ámsterdam. “Casi todos los incendios en las regiones tropicales se deben a causas antrópicas. En las regiones templadas se detectan incendios naturales e incendios provocados por el ser humano, mientras que en el cinturón boreal la causa principal son los rayos”.
+
+                    <br />
+                </p>
+
+
+            </div>
+        </div>
+
+
+
+        <!-- --------------------------------------CHAPTER_02 .------------------------ -->
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="flex-video widescreen vimeo" id="drones">
+            <iframe src="https://player.vimeo.com/video/182289303" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <br>
+                <br>
+                <p>
+                    <span class="firstcharacter">“T</span>he drone’s hardware can be bought with about 2000 US dollars, while the software for flying it is free and open source”, explains Keeyen Pang, director of Conservation Drones’ Asian operations, while his son builds a small drone and inserts its flight mission. “All you need to do is install a micro-camera on the drone to obtain a high definition mapping of the forest.”
+                    <br>
+                    <br> “Our drones are a cheap and effective instrument against deforestation and that support the conservation of nature”, explains Lian Pin Koh, professor of Applied Ecology at Adelaide University. Along with the Swiss biologist Serge Wich, Lian Pin Koh is the founder of <a href="http://bit.ly/conservation-drones" target="_blank">Conservation drones</a>, a non-profit organization which brings together an international group of ecology experts and remote controlled aircraft enthusiasts.</p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="row">
+
+
+            <br>
+
+
+
+
+
+            <div class="flex-video-03">
+                <iframe frameborder="0" class="juxtapose" width="100%" height="788" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=8234250c-740c-11e6-b53e-0edaf8f81e27"></iframe>
+            </div>
+
+            <p class="sottotitolo">An area of the Gunung Leuser national park, in Indonesia, has been cut down illegally, as detected by the Conservation Drones team. A strip of trees and plants has been left along the river to hide the deforested area.
+            </p>
+            <p class="fonte">Source: <a href="https://conservationdrones.org/" target="_blank">Conservation Drones</a> </p>
+            <hr>
+
+
+            </video>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+
+                    “We’ve been helping the environmental defence organization drones fly since 2012. It’s important to supply low cost technology, mainly in developing countries, to fly over hard to access areas and control their state of conservation”, the co-founders of Conservation Drones tell us.
+                    <br>
+                    <br> “Conservation Drones often gets cooperation proposals from organizations from all over the world. Over time, our network of experts in drones for conservation has expanded”, explains Keeyen Pang, as he checks the final configurations and prepares for the test launch.
+                </p>
+                <hr>
+                <p class="quote LyonTextOSFWeb-Bold">
+                    En el sudeste de Asia, los drones permiten cartografiar las plantaciones de palma de aceite, una de causas más importantes de la deforestación de la zona.
+                </p>
+                <hr>
+                <p> Lian Pin Koh and Serge Wich’s drones fly over Tanzania, where they are used to monitor chimpanzee conservation. They fly in Suriname, where a project for monitoring the virgin forests is in progress. In Indonesia, where they are used to observe the endangered orangutan population. And in the rest of south-east Asia, where drones are useful for the mapping of palm oil cultivations, one of the primary causes of deforestation in the region.
+                    <br>
+                    <br> Conservation Drones’ flight missions are already giving tangible results. “In 2014, for example, images taken by our aircrafts have detected an illegally deforested area in a Sumatran natural reserve”, Lian Pin Koh proudly explains. “Our images have been used as proof by the Indonesian authorities, and the perpetrators of this crime have been put on trial.”
+
+                    <br />
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <!-- --------------------------------------CHAPTER_03 .------------------------ -->
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="flex-video widescreen vimeo" id="bears">
+            <iframe src="https://player.vimeo.com/video/182289671" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <br>
+                <br>
+                <p>
+                    <span class="firstcharacter">E</span>n un rincón remoto de la selva de Sabah, en el extremo noreste de la isla de Borneo, un pequeño equipo de zoólogos trabaja para conservar una especie poco conocida: el oso malayo. El <a href="http://bit.ly/sunbearscenter" target="_blank">Centro de Borneo para la Conservación del Oso Malayo</a>, fundado en 2008 por el zoólogo malayo Wong Siew Te, es la única reserva del mundo dedicada a proteger activamente a esta especie en peligro de extinción.
+                    <br>
+                    <br>“Poca gente se imagina que también hay osos que viven en la selva tropical, hasta el punto de que los hemos apodado los osos olvidados”, explica Tee Thye Lim, que tiene a su cargo a los osos del centro a los que se ha liberado de su cautiverio. “Por desgracia, aunque no son conocidos en el mundo, o quizá por eso, están en peligro de extinción. En los últimos 30 años hemos perdido más o menos un 30% de ejemplares”.
+                    <br>
+                    <br> En algunas regiones del sudeste de Asia se captura a los cachorros de los osos malayos para tenerlos como mascotas y acabar abandonándolos cuando crecen. Los osos también son víctimas del comercio ilegal, ya que, según la medicina china, su vesícula biliar y sus garras tienen propiedades curativas. A esto hay que añadir la deforestación, causada principalmente por el cultivo de palma aceitera, que ha mermado considerablemente su hábitat natural.
+                    <br>
+                    <br> Los expertos del centro explican que la extinción de los osos malayos provocaría una reacción en cadena en el ecosistema del bosque. “Las plantas y los animales viven en armonía, y la desaparición de una sola especie puede alterar el equilibro de la selva. Los osos malayos, por ejemplo, son auténticos ingenieros forestales”, prosigue Tee Thye Lim. “Cuando buscan la miel de la que se alimentan, abren cavidades en los árboles en las que encontrarán cobijo otros animales, como el cálao bicorne”.
+                </p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <hr>
+                <img src="images/biodiversity.jpg">
+                <p class="fonte">Source: <a href="http://www.iucnredlist.org/" target="_blank"> The IUCN Red List of threatened species (2016)</a> </p>
+                <hr>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+                    El oso malayo es uno más de las numerosas plantas y animales actualmente en peligro de extinción. Según la lista roja elaborada por la Unión Internacional por la Conservación de la Naturaleza (IUCN, por sus siglas en inglés), en estos momentos al menos 20.000 especies vegetales y animales corren el riesgo de desaparecer en todo el mundo.
+
+                </p>
+                <hr>
+                <p class="quote LyonTextOSFWeb-Bold">
+                    La destrucción de los hábitats naturales, la explotación comercial de la tierra, la contaminación y el cambio climático son algunas de las causas principales de la pérdida de biodiversidad a escala mundial.
+                </p>
+                <hr>
+                <p>
+                    “Estamos en plena crisis de la biodiversidad. Perdemos alrededor de 1.000 especies de plantas y animales al año”, advierte el profesor Henrique Pereira, jefe de investigación del Centro Alemán para la Investigación Integradora de la Biodiversidad de la Universidad de Leipzig. “La biodiversidad es fundamental para el equilibrio del planeta, pero también para la salud de la humanidad. Muchas medicinas proceden de compuestos extraídos de animales o de plantas. Cada vez que se extingue uno de ellos, perdemos la oportunidad de descubrir compuestos que se puedan utilizar para crear un nuevo medicamento”.
+                    <br> La destrucción de los hábitats naturales, la explotación comercial de la tierra, la contaminación y el cambio climático son algunas de las causas principales de la pérdida de diversidad a escala mundial. “Estamos en plena crisis de la biodiversidad. Perdemos alrededor de 1.000 especies de plantas y animales al año”, afirma el catedrático Henrique Pereira, jefe de investigación del Centro Alemán para la Investigación Integradora de la Biodiversidad de la Universidad de Leipzig. “La biodiversidad es fundamental para el equilibrio del planeta, pero también para la salud de la humanidad. Muchas medicinas proceden de compuestos extraídos de animales o de plantas. Cada vez que se extingue uno de ellos, perdemos la oportunidad de descubrir compuestos que se puedan utilizar para crear un nuevo medicamento”.
+
+
+                    <br />
+                </p>
+
+
+            </div>
+        </div>
+
+
+
+
+        <!-- --------------------------------------CHAPTER_04 .------------------------ -->
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="flex-video widescreen vimeo" id="connection">
+            <iframe src="https://player.vimeo.com/video/182289315" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <br>
+                <br>
+                <p>
+                    <span class="firstcharacter">A</span> Un teléfono inteligente sujeto al tronco de un árbol en la selva, alimentado por paneles solares y con un micrófono activo conectado constantemente a Internet: esta es la idea que hay detrás de
+                    <a href="http://bit.ly/rfcxorg" target="_blank">Rainforest Connection</a>, el dispositivo creado por Topher White, un joven físico e ingeniero de San Francisco consagrado a proteger los bosques del planeta.
+                    <br>
+                    <br> “El aparato creado por Topher permite escuchar a distancia los sonidos de la selva utilizando un simple teléfono inteligente”, resume James Reed mientras, pertrechado con su equipo, manipula una curiosa caja de plástico con una antena. “Estoy aquí, en los bosques de Borneo, para ayudar a Topher a montar los aparatos. Y, mientras tanto, enseño a las comunidades locales a trepar sin peligro, de manera que en el futuro puedan instalar y ocuparse de los dispositivos ellas mismas”.
+                    <br>
+                    <br> Los aparatos de Rainforest Connection transmiten la señal sonora entrante a la nube, desde la cual un programa informático puede examinar los sonidos registrados. Cuando el programa detecta un sonido inusual, como el rugido de una motosierra o el disparo de un rifle, manda un mensaje de alarma a las autoridades locales o a las asociaciones que tienen la capacidad de actuar para detener las actividades de deforestación ilegal o la caza furtiva.
+
+                </p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <hr>
+                <h4>How does Rainforest Connection work?</h4>
+
+                <img src="images/rainforestconnection.jpg">
+                <p class="fonte">Source: <a href="https://rfcx.org/" target="_blank"> Rain Forest Connection</a> </p>
+                <hr>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+                    “Estamos probando Rainforest Connection en todos los bosques tropicales del mundo. Nuestro objetivo es conseguir proteger entre 20 y 30 hectáreas en los próximos dos años utilizando esta tecnología”, cuenta Topher, que pasa la mitad de su tiempo en su laboratorio de San Francisco y la otra mitad en selvas de todo el mundo.
+                    <br>
+                    <br> “Pensamos que es básico establecer relaciones de colaboración con las comunidades locales y las organizaciones que trabajan para defender los bosques”, explica White. “Iniciativas como <a href="http://bit.ly/treemonkey" target="_blank">Tree Monkey</a> , de James Reed, son fundamentales para nosotros. James y su equipo nos ayudan a instalar físicamente los aparatos y organizan sesiones de entrenamiento para escalar con el fin de enseñar a las comunidades de la zona a trepar sin peligro a los árboles más altos de la selva”.
+                    <br>
+                    <br> Según los cálculos de Topher, un solo aparato puede detectar el sonido de una motosierra en un área de unos tres kilómetros cuadrados. Esto significa que, utilizando unos pocos dispositivos situados en lugares estratégicos (por ejemplo, los puntos de acceso al bosque), se pueden proteger superficies forestales muy extensas”.
+                </p>
+                <hr>
+                <p class="quote LyonTextOSFWeb-Bold">
+                    Un simple teléfono móvil conectado a Internet puede convertirse en guardián de la selva.
+                </p>
+                <hr>
+                <p>
+                    A Topher White se le ocurrió la idea de su aparato en una selva. “En 2011 estaba en Kalimantán, en Indonesia. Iba andando por la selva con mi guía local cuando nos topamos con una zona talada ilegalmente. El guía montó en cólera y me contó lo difícil que era acabar con esas actividades a pesar de la presencia de los guardas forestales. Me di cuenta de que un simple teléfono conectado a Internet se podría convertir en un guardián, y en los últimos años me he dedicado a desarrollar la tecnología del aparato”.
+
+                    <br>
+                    <br> Los dispositivos de Rainforest Connection se podrían aplicar también a otros fines. Los investigadores pueden utilizar el sonido transmitido por la nube para estudiar los bosques; por ejemplo, para analizar las migraciones animales o hacer un seguimiento de los ritmos de los ecosistemas. O algo más sencillo: se podría transformar en una radio para escuchar la orquesta forestal desde el sillón de casa. “Hace poco hemos puesto en marcha una radio digital que permite que cualquiera, en cualquier lugar del mundo, escuche en directo los sonidos de la selva. Por ahora solo tienen acceso a ella las personas que deciden hacer un donativo a nuestro proyecto y ayudarnos a convertir aún más teléfonos inteligentes en guardianes de la jungla”.
+
+
+                    <br />
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-12 medium-centered columns">
+                <hr>
+                <h4>The evolution of forests from 1990 to 2015</h4>
+                <div class="flex-video">
+                    <iframe src="https://jackottaviani.carto.com/viz/1479ccd6-7431-11e6-981d-0ef24382571b/embed_map" width="400" height="100" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+                </div>
+                <p class="fonte" style="padding:8px">Source: <a href="http://www.fao.org/forest-resources-assessment/en/" target="_blank"> Global Forest Resources Assessment (Fao, 2015)</a> </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="medium-8 medium-centered columns">
+                <p>
+                    “Los bosques están desapareciendo en el mundo a un ritmo objeto de debate científico. Los datos proporcionados por Naciones Unidas revelan que la deforestación se ha reducido en las últimas décadas”, informa Peter Holmgren, director del Centro de Investigación Forestal Internacional. “Es una buena noticia, pero en determinadas zonas del mundo, como Indonesia, Brasil y África central, seguimos perdiendo bosques a un ritmo preocupante”.
+                    <br />
+                </p>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="row">
+                <div class="medium-9 medium-centered columns">
+                    <br />
+                    <a href="#"><h6>Los pulmones de la Tierra</h6></a>
+                    <br />
+                    <center>
+                        <a href="#"><img src="images/logo_smaller.jpg"></a>
+                    </center>
+
+                    <br />
+                    <p>Un reportaje de <a href="https://twitter.com/JacopoOttaviani" target="_blank"> Jacopo Ottaviani</a> realizado con el apoyo del programa Beca para la Innovación en Reportajes sobre el Desarrollo del Centro de Periodismo Europeo (EJC por sus siglas en inglés), financiado por la Fundación Bill y Melinda Gates. Fotografía y Dieño: Isacco Chiaf. Edición de vídeo: Alberto Abbate.
+
+                    </p>
+
+                    <br />
+                    <center>
+                        <img width="100px" src="images/footer_ejclogo.png">
+                    </center>
+                    <p><i>Innovation in Development Reporting Grant</i>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </footer>
+
+        <!-- --------------------------------------CHAPTER_04 .------------------------ -->
+
+
+        <script src="js/videoresize.js"></script>
+        <script src="js/waypoint.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/foundation/foundation.tab.js"></script>
+        <script>
+            $(document).foundation();
+
+        </script>
+
+
+</body>
+
+</html>
