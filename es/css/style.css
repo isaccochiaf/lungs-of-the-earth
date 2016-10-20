@@ -100,10 +100,7 @@ header {
 header img {
     margin-top: 18px;
     margin-left: 20px;
-    height: 28px;
-    line-height: 150px;
     float: left;
-    font-size: 60px;
     color: white;
     font-weight: 400;
     position: absolute;
@@ -177,7 +174,7 @@ header.smaller {
     height: 45px;
 }
 header.smaller img {
-    height: 20px;
+    height: 30px;
     line-height: 75px;
     margin-top: 13px;
     margin-left: 9px;
@@ -211,13 +208,9 @@ header.smaller #title-head {
         height: 60px;
     }
     header img {
-        width: 240px;
-        height: 38px;
+        width: 40px;
     }
-    header.smaller img {
-        width: 200px;
-        height: 30px;
-    }
+    header.smaller img {}
     header nav {
         display: block;
         float: none;
